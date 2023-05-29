@@ -1,0 +1,54 @@
+/* Menu */
+:root {
+    --city: url("https://images.pexels.com/photos/14463076/pexels-photo-14463076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.4s;
+  }
+  body {
+    height: auto;
+    width: auto;
+    overflow-x: hidden;
+  }
+  
+  .bars {
+    position: relative;
+    overflow: hidden;
+    background-image: var(--city);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .bars a {
+    height: 100%;
+    margin: auto;
+    padding: 1rem;
+    background-attachment: fixed;
+    color: #353434;
+    font-size: 42px;
+    font-family: Impact;
+    text-align: center;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+  .bars a:hover {
+    letter-spacing: 1rem;
+    color: #000
+  }
+  
+  @media (max-width: 900px) {
+    .bars {
+      height: 100vh;
+    }
+    .bars a {
+      height: 20vh;
+      display: block;
+      writing-mode: inherit;
+    }
+  }
